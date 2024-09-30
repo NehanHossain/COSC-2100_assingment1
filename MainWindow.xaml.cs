@@ -68,7 +68,7 @@ namespace COSC_2100_assingment1
                 //if the counter reaches 7 it calculates and displays the avrage of all the numbers and disabels the enter button
                 if (counter == 7)
                 {
-                    float average = (float)numbers.Average();
+                    float average = (float)Math.Round(numbers.Average(), 1, MidpointRounding.AwayFromZero);
                     seconderyOutput.Text = "Avrage messages per day: " + average.ToString();
                     enter.IsEnabled = false;
                     return;
@@ -77,7 +77,7 @@ namespace COSC_2100_assingment1
 
         }
 
-        //Checks if the number is a positive whole number below or equal to 1000
+        //Checks if the number is a positive whole number below or equal to 10000
         private static int Validation(string input)
         {
             if (string.IsNullOrEmpty(input))
@@ -88,7 +88,7 @@ namespace COSC_2100_assingment1
             {
                 MessageBox.Show("Please enter a possitive whole number.");
             }
-            else if (result > 1000)
+            else if (result >= 10000)
             {
                 MessageBox.Show("Please enter an input that is below 1000.");
             }
