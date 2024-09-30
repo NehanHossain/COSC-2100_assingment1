@@ -88,9 +88,9 @@ namespace COSC_2100_assingment1
             {
                 MessageBox.Show("Please enter a possitive whole number.");
             }
-            else if (result >= 10000)
+            else if (result > 10000)
             {
-                MessageBox.Show("Please enter an input that is below 1000.");
+                MessageBox.Show("Please enter an input that is below 10000.");
             }
             else if (result < 0)
             {
