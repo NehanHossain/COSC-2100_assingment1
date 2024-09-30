@@ -32,7 +32,7 @@
         </Grid.RowDefinitions>
 
         <!--Labels-->
-        <Label Grid.Column="4" Grid.Row="0" Name="day" Content="Day 0" Margin="42,49,133,44" FontSize="23" ToolTip="Displays the current day"/>
+        <Label Grid.Column="4" Grid.Row="0" Name="day" Content="Day 1" Margin="42,49,133,44" FontSize="23" ToolTip="Displays the current day"/>
         <Label Grid.Row="0" Name="massages" Content="Number of Massages:" Margin="0,49,230,44" FontSize="23" RenderTransformOrigin="0.5,0.5" ToolTip="Displays the massage type" Grid.ColumnSpan="2" Grid.Column="2"/>
 
         <!--Text Boxes-->

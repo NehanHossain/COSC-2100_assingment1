@@ -51,8 +51,15 @@ namespace COSC_2100_assingment1
             {
                 counter++;
                 numbers.Add(number);
-                mainOutput.Text += number + Environment.NewLine; 
-                day.Content = "Day " + counter.ToString();
+                mainOutput.Text += number + Environment.NewLine;
+
+                if (counter == 7)
+                {
+                    day.Content = " ";
+                }
+                else {
+                    day.Content = "Day " + (counter + 1).ToString();
+                }
 
                 //makes shure that the input text box is clear
                 input.Clear();
@@ -104,7 +111,7 @@ namespace COSC_2100_assingment1
             seconderyOutput.Clear();
             mainOutput.Clear();
             counter = 0; 
-            day.Content = "Day 0"; 
+            day.Content = "Day 1"; 
             enter.IsEnabled = true; 
         }
 
